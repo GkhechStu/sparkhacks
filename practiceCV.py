@@ -26,20 +26,19 @@ def addVal(dict, key, className, timeStart, timeEnd):
     dict[key].append(timeEnd)
 
 classLine = ""
-semLine = ""
+semester = ""
 
 with open("Registration.html", "r") as f:
     for line in f.readlines():
         if "id=\"calendar\"" in line:
             # print(line,"\n")
             classLine = line
-        if "class=\"schedule-list-view-title-text\">" in line:
-        # print(line,"\n")
-            semLine = line
+        if "\"startDate\": \"" in line:
+            # print(line,"\n")
+            semester = line[line.find(": \"") + 3 : line.find("\",")]
 
 # print(semLine)
 # ---------------------------------------- var declarations below ----------------------------------------
-semester = ""
 min = 0
 Day = ""
 Time = ""
@@ -50,7 +49,7 @@ className = ""
 classes = {}
 # ---------------------------------------- var declarations above ----------------------------------------
 
-semester = semLine[semLine.find(">") + 1 : semLine.find("</span>")]
+print(semester)
 
 week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 end = classLine.count("class=\"section-time-details\" href=\"#\">")
