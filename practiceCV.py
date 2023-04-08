@@ -35,7 +35,7 @@ with open("Registration.html", "r") as f:
             classLine = line
         if "\"startDate\": \"" in line:
             # print(line,"\n")
-            semester = line[line.find(": \"") + 3 : line.find("\",")]
+            semester = line[line.find(": \"") + 3 : line.find(",")]
 
 # print(semLine)
 # ---------------------------------------- var declarations below ----------------------------------------
