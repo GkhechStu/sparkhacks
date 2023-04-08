@@ -352,9 +352,6 @@ def openFile():
     main(filepath)
     window.destroy()
 
-def Remind():
-    print("remind")
-
 def gui():
     window.title('Tkinter Window Demo')
     window.geometry('600x400')
@@ -368,11 +365,7 @@ def gui():
     canvas.create_text(300, 250, text="Once the file has downloaded click upload file", fill="white", font=('Helvetica 15 bold'))
     canvas.create_text(300, 300, text="And open the registration.html file", fill="white", font=('Helvetica 15 bold'))
 
-    buttonRemind = Button(text = "Reminder", command = Remind)
-    buttonRemind.place(x = 150, y = 185)
-
     buttonFile = Button(text="Upload File",command = openFile)
-
 
     canvas.pack()
     buttonFile.place(x = 250,y = 185)
