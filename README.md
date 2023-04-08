@@ -1,9 +1,9 @@
                                                    SimplyCalendar - SparkHack 2023 UIC
 
 Team Members:
-Gor
-Kenneth
-Ahmad
+Gor,
+Kenneth,
+Ahmad,
 Vincenzo
 
 Project Description
