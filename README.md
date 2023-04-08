@@ -1,4 +1,4 @@
-                                                   SimplyCalendar - SparkHack 2023 UIC
+                                              SimplyCalendar - SparkHack 2023 UIC
 
 Team Members:
 Gor,
